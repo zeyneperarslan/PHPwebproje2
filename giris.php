@@ -133,7 +133,7 @@ if ($say == 1){
             <a href="uyeekle.php">Üyeliğin hala yok mu?</a>
         </div><br/>
     </div>
-    <a href="https://github.com/zeyneperarslan" class="github">GİTHUB SAYFASI</a>
+    <a href="https://github.com/zeyneperarslan/PHPwebproje2" class="github">GİTHUB SAYFASI</a>
     </body>
     </html>
     <?php }
