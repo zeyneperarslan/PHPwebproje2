@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['kullaniciadi'])) {
-    header("Location: anasayfa.php");
+    header("Location: index.php");
     exit;
 }
 
@@ -19,10 +19,10 @@ if (isset($_GET['id'])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $malzemeadi = $_POST['malzemeadi'];
-    $tur = $_POST['tür'];
+    $tur = $_POST['tur'];
     $sayi = $_POST['sayi'];
 
-    $sql = "UPDATE malzemeler SET malzemeadi = '$malzemeadi', tür = '$tur', sayi = '$sayi' WHERE id = $id";
+    $sql = "UPDATE malzemeler SET malzemeadi = '$malzemeadi', tur = '$tur', sayi = '$sayi' WHERE id = $id";
     
     if (mysqli_query($baglanti, $sql)) {
         header("Location: malzeme.php");
@@ -101,8 +101,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="text" id="malzemeadi" name="malzemeadi" value="<?php echo htmlspecialchars($event['malzemeadi']); ?>" required>
             </div>
             <div class="form1">
-                <label for="tür">Malzeme Türü:</label>
-                <input type="text" id="tür" name="tür" value="<?php echo $event['tür']; ?>" required>
+                <label for="tur">Malzeme Türü:</label>
+                <input type="text" id="tur" name="tur" value="<?php echo $event['tur']; ?>" required>
             </div>
             <div class="form1">
                 <label for="sayi">Malzeme Sayısı:</label>
