@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['kullaniciadi'])) {
-    header("Location: anasayfa.php");
+    header("Location: index.php");
     exit;
 }
 
@@ -17,12 +17,12 @@ if (isset($_GET['id'])) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $etkinlik_adı = $_POST['etkinlik_adı'];
+    $etkinlik_adi = $_POST['etkinlik_adi'];
     $tarih = $_POST['tarih'];
     $yer = $_POST['yer'];
     $konu= $_POST['konu'];
 
-    $sql = "UPDATE etkinlikler SET etkinlik_adı = '$etkinlik_adı',tarih = '$tarih', yer = '$yer', konu = '$konu' WHERE id = $id";
+    $sql = "UPDATE etkinlikler SET etkinlik_adi = '$etkinlik_adi',tarih = '$tarih', yer = '$yer', konu = '$konu' WHERE id = $id";
     
     if (mysqli_query($baglanti, $sql)) {
         header("Location: etkinlik.php");
@@ -100,8 +100,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Etkinlik Detayları</h2>
         <form method="POST" action="etkinlikduzenle.php?id=<?php echo $id; ?>">
             <div class="form-group">
-                <label for="etkinlik_adı">Etkinlik Adı:</label>
-                <input type="text" id="etkinlik_adı" name="etkinlik_adı" value="<?php echo htmlspecialchars($event['etkinlik_adı']); ?>" required>
+                <label for="etkinlik_adi">Etkinlik Adı:</label>
+                <input type="text" id="etkinlik_adi" name="etkinlik_adi" value="<?php echo htmlspecialchars($event['etkinlik_adi']); ?>" required>
             </div>
             <div class="form1">
                 <label for="tarih">Etkinlik Tarihi:</label>
