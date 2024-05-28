@@ -18,7 +18,7 @@ CREATE TABLE uyeler(
 
 CREATE TABLE etkinlikler(
     id INT AUTO_INCREMENT PRIMARY KEY,
-    etkinlik_adı VARCHAR(255) NOT NULL,
+    etkinlik_adi VARCHAR(255) NOT NULL,
     tarih DATE ,
     yer VARCHAR(255) NOT NULL ,
     konu VARCHAR(255) NOT NULL 
