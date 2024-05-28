@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['kullaniciadi'])) {
-    header("Location: anasayfa.php");
+    header("Location:index.php");
     exit;
 }
 
