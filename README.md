@@ -1,5 +1,5 @@
 
-VİDEO LİNKİ:https://youtu.be/2wftGWh-n2o
+VİDEO LİNKİ:https://youtu.be/Wd0cFyGdnA4
 
 
 ****KURULUM****
