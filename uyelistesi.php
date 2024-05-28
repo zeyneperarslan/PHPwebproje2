@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_POST['kullaniciadi']) && isset($_POST['sifre']) && isset($_POST['isim']) && isset($_POST['soyisim']) && isset($_POST['telefon']) && isset($_POST['email']) && isset($_POST['adres'])) {
-    header("Location: anasayfa.php");
+    header("Location: index.php");
     exit;
 }
 
@@ -109,7 +109,7 @@ if (!$cevap) {
         </table>
         <br>
         <a href="uyeekle.php"  class="buton">Yeni Üye Ekle</a><br/><br/>
-        <a href="anasayfa.php" class="buton">Anasayfaya Dön</a><br/>
+        <a href="index.php" class="buton">Anasayfaya Dön</a><br/>
     </div>
 </body>
 </html>
