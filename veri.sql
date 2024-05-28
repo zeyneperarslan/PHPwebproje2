@@ -1,5 +1,5 @@
 
-CREATE DATABASE IF NOT EXISTS resimkulup; --veritabanını oluşturdum
+CREATE DATABASE IF NOT EXISTS if0_36633270_resimkulup;
 
 --tabloları oluşturdum 
 
