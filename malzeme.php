@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['kullaniciadi'])) {
-    header("Location: anasayfa.php");
+    header("Location: index.php");
     exit;
 }
 
@@ -94,7 +94,7 @@ if (!$cevap) {
                 <tr>
                     <td><?php echo $row['id']; ?></td>
                     <td><?php echo htmlspecialchars($row['malzemeadi']); ?></td>
-                    <td><?php echo htmlspecialchars($row['tür']); ?></td>
+                    <td><?php echo htmlspecialchars($row['tur']); ?></td>
                     <td><?php echo htmlspecialchars($row['sayi']); ?></td>
                     <td>
                         <a href="malzemeduzenle.php?id=<?php echo $row['id']; ?>" class="buton">Düzenle</a>
@@ -105,7 +105,7 @@ if (!$cevap) {
         </table>
         <br>
         <a href="malzemeekle.php" class="buton">Yeni Malzeme Ekle</a>
-        <a href="anasayfa.php" class="buton">Anasayfaya Dön</a><br/>
+        <a href="index.php" class="buton">Anasayfaya Dön</a><br/>
     </div>
 </body>
 </html>
