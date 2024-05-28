@@ -19,7 +19,7 @@ if ($say == 1){
     else{
     $mesaj = "<h1> Hatalı Kullanıcı adı veya Şifre!</h1>"; }
     }
-    if (isset($_SESSION['kullaniciadi'])){ header("Location:anasayfa.php");
+    if (isset($_SESSION['kullaniciadi'])){ header("Location:index.php");
     }else{
     //oturum yok ise login formu görüntüle
     ?>
