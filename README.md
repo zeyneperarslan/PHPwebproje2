@@ -1,3 +1,6 @@
+
+VİDEO LİNKİ:https://youtu.be/2wftGWh-n2o
+                             ****KURULUM****
 1. XAMPP'i İndirin ve Kurun
 XAMPP'in resmi web sitesinden XAMPP'i indirin ve bilgisayarınıza kurun.
 Kurulum tamamlandıktan sonra XAMPP Kontrol Paneli'ni açın ve Apache ile MySQL servislerini başlatın.
