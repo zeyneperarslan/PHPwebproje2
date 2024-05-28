@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 session_start(); 
 require('web.php');
 if (isset($_POST['kullaniciadi']) and isset($_POST['sifre'])){
@@ -92,6 +94,18 @@ if ($say == 1){
             color: #800000;
             text-decoration: none;
         }
+        .github {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #6A5ACD;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .github:hover {
+            background-color:
     </style>
     </head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -119,6 +133,7 @@ if ($say == 1){
             <a href="uyeekle.php">Üyeliğin hala yok mu?</a>
         </div><br/>
     </div>
+    <a href="https://github.com/zeyneperarslan" class="github">GİTHUB SAYFASI</a>
     </body>
     </html>
     <?php }
