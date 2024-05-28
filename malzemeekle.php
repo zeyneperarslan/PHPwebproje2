@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['kullaniciadi'])) {
-    header("Location: anasayfa.php");
+    header("Location: index.php");
     exit;
 }
 
@@ -9,10 +9,10 @@ require('web.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $malzemeadi = $_POST['malzemeadi'];
-    $tür = $_POST['tür'];
+    $tur = $_POST['tur'];
     $sayi = $_POST['sayi'];
 
-    $sql = "INSERT INTO malzemeler (malzemeadi, tür, sayi) VALUES ('$malzemeadi', '$tür', '$sayi')";
+    $sql = "INSERT INTO malzemeler (malzemeadi, tur, sayi) VALUES ('$malzemeadi', '$tur', '$sayi')";
     
     if (mysqli_query($baglanti, $sql)) {
         $success_message = "Malzeme başarıyla eklendi!";
@@ -126,8 +126,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="text" id="malzemeadi" name="malzemeadi" required>
             </div>
             <div class="form1">
-                <label for="tür">Malzeme Türü:</label>
-                <input type="text" id="tür" name="tür" required>
+                <label for="tur">Malzeme Türü:</label>
+                <input type="text" id="tur" name="tur" required>
             </div>
             <div class="form1">
                 <label for="sayi">Malzeme Sayısı:</label>
@@ -135,7 +135,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <button type="submit">Malzemeyi Ekle</button><br/>
             <a href="malzeme.php" class="secenek" >Malzemeleri Listele</a> <br/>
-            <a href="anasayfa.php" class="secenek" >Anasayfaya Git</a> 
+            <a href="index.php" class="secenek" >Anasayfaya Git</a> 
         
         </form>
     </div>
