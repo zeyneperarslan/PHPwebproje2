@@ -1,19 +1,19 @@
 <?php
 session_start();
 if (!isset($_SESSION['kullaniciadi'])) {
-    header("Location: anasayfa.php");
+    header("Location: index.php");
     exit;
 }
 
 require('web.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $etkinlik_adı = $_POST['etkinlik_adı'];
+    $etkinlik_adi = $_POST['etkinlik_adi'];
     $tarih = $_POST['tarih'];
     $yer = $_POST['yer'];
     $konu = $_POST['konu'];
 
-    $sql = "INSERT INTO etkinlikler (etkinlik_adı, tarih, yer,konu) VALUES ('$etkinlik_adı', '$tarih', '$yer' , '$konu')";
+    $sql = "INSERT INTO etkinlikler (etkinlik_adi, tarih, yer,konu) VALUES ('$etkinlik_adi', '$tarih', '$yer' , '$konu')";
     
     if (mysqli_query($baglanti, $sql)) {
         $success_message = "Etkinlik başarıyla eklendi!";
@@ -123,8 +123,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ?>
         <form method="POST" action="etkinlikekle.php">
             <div class="form1">
-                <label for="etkinlik_adı">Etkinlik Adı:</label>
-                <input type="text" id="etkinlik_adı" name="etkinlik_adı" required>
+                <label for="etkinlik_adi">Etkinlik Adı:</label>
+                <input type="text" id="etkinlik_adi" name="etkinlik_adi" required>
             </div>
             <div class="form1">
                 <label for="tarih">Etkinlik Tarihi:</label>
@@ -141,7 +141,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             <button type="submit">Etkinlik Ekle</button><br/>
             <a href="etkinlik.php"class="secenek" >Etkinlikleri Listele</a><br/>
-            <a href="anasayfa.php"class="secenek" >Anasayfaya Dön</a><br/>
+            <a href="index.php"class="secenek" >Anasayfaya Dön</a><br/>
             <br/>
         </form>
     </div>
