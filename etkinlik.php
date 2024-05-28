@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['kullaniciadi'])) {
-    header("Location: anasayfa.php");
+    header("Location:index.php");
     exit;
 }
 
@@ -94,7 +94,7 @@ if (!$cevap) {
             <?php while ($row = mysqli_fetch_assoc($cevap)) { ?>
                 <tr>
                     <td><?php echo $row['id']; ?></td>
-                    <td><?php echo htmlspecialchars($row['etkinlik_adı']); ?></td>
+                    <td><?php echo htmlspecialchars($row['etkinlik_adi']); ?></td>
                     <td><?php echo $row['tarih']; ?></td>
                     <td><?php echo htmlspecialchars($row['yer']); ?></td>
                     <td><?php echo htmlspecialchars($row['konu']); ?></td>
@@ -107,7 +107,7 @@ if (!$cevap) {
         </table>
         <br>
         <a href="etkinlikekle.php" class="buton">Etkinlik Ekle</a>
-        <a href="anasayfa.php" class="buton">Anasayfaya Dön</a><br/>
+        <a href="index.php" class="buton">Anasayfaya Dön</a><br/>
     </div>
 </body>
 </html>
