@@ -85,6 +85,6 @@ if (!isset($_SESSION['kullaniciadi'])) {
         <a href="malzeme.php">Malzemeleri Listele</a><br/>
         <a href='cikis.php' class="logout">Çıkış Yap</a>
     </div>
-    <<a href="https://github.com/zeyneperarslan" class="github">GİTHUB SAYFASI</a>
+    <<a href="https://github.com/zeyneperarslan/PHPwebproje2" class="github">GİTHUB SAYFASI</a>
 </body>
 </html>
