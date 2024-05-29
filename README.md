@@ -1,5 +1,5 @@
 
-VİDEO LİNKİ:https://youtu.be/Wd0cFyGdnA4
+VİDEO LİNKİ:https://youtu.be/Wd0cFyGdnA4 (kayıt alınırken sayfa tam olarak görüntülenmediği için sağ alt köşede yer alan github link butonu gözükmüyor.)
 
 
 ****KURULUM****
