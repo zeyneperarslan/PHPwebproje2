@@ -1,7 +1,6 @@
 
 VİDEO LİNKİ:https://youtu.be/Wd0cFyGdnA4 (Videoda ,kayıt alınırken sayfa tam olarak görüntülenmediği için maalesef sağ alt köşede yer alan github link butonu gözükmüyor.)
-
-
+ 
 ****KURULUM****
 1. XAMPP'i İndirin ve Kurun
 XAMPP'in resmi web sitesinden XAMPP'i indirin ve bilgisayarınıza kurun.
